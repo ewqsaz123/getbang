@@ -1,5 +1,6 @@
 # getbang - 겟방
-방탈출 카페 통합 예약 시스템
+- 방탈출 카페 통합 예약 시스템
+- Cloud Native App
 
 # Table of contents
 
@@ -24,4 +25,10 @@
     1. 예약 관리 기능이 수행되지 않더라도 예약 주문&승인은 365일 24시간 받을 수 있어야 한다  Async (event-driven), Eventual Consistency
 2. 성능
     1. 예약 및 룸 관리기능과 별도로 이루어진 조회만을 위한 서비스가 있어야 한다.(CQRS)
+    
+ 
+# 이벤트 스토밍
+
+<img width="984" alt="image" src="https://user-images.githubusercontent.com/20436113/199890537-ea2981ce-1da9-417d-8d44-5cda49fc404b.png">
+
 
