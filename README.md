@@ -29,6 +29,7 @@
  
 # 이벤트 스토밍
 
+- MSAEz 로 모델링한 이벤트스토밍 결과: https://www.msaez.io/#/storming/gvBKJ8asEZSiRXXDACkN51rc7D83/2ea40b104d4dea04fd51633b608fbe1e
 <img width="984" alt="image" src="https://user-images.githubusercontent.com/20436113/199890537-ea2981ce-1da9-417d-8d44-5cda49fc404b.png">
 
 
