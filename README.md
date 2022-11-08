@@ -30,7 +30,8 @@
 # 이벤트 스토밍
 
 - MSAEz 로 모델링한 이벤트스토밍 결과: https://www.msaez.io/#/storming/gvBKJ8asEZSiRXXDACkN51rc7D83/2ea40b104d4dea04fd51633b608fbe1e
-<img width="1001" alt="image" src="https://user-images.githubusercontent.com/20436113/199900373-d6e6582e-b937-4304-82e9-f21dd340de9a.png">
+![image](https://user-images.githubusercontent.com/20436113/200521709-fdb79870-2ef3-4dcd-b138-fc5475dae2e1.png)
+
 
 - 도메인 서열 분리 
     - Core Domain:  reservation, management : 없어서는 안될 핵심 서비스이며, 연견 Up-time SLA 수준을 99.999% 목표, 배포주기는 app 의 경우 1주일 1회 미만, store 의 경우 1개월 1회 미만
