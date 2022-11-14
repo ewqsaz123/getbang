@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gateway/boot-camp-gateway.iml" filepath="$PROJECT_DIR$/gateway/boot-camp-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/getbang.iml" filepath="$PROJECT_DIR$/.idea/getbang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/management/management.iml" filepath="$PROJECT_DIR$/management/management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reservation/reservation.iml" filepath="$PROJECT_DIR$/reservation/reservation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpage/viewpage.iml" filepath="$PROJECT_DIR$/viewpage/viewpage.iml" />
+    </modules>
+  </component>
+</project>
