@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: reservation
-          image: username/reservation:latest
+          image: getbang/reservation:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -58,7 +58,7 @@ spec:
     spec:
       containers:
         - name: management
-          image: username/management:latest
+          image: getbang/management:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -98,7 +98,7 @@ spec:
     spec:
       containers:
         - name: viewpage
-          image: username/viewpage:latest
+          image: getbang/viewpage:latest
           ports:
             - containerPort: 8080
           readinessProbe:
