@@ -44,5 +44,7 @@
 # 시스템 구조
   
 # DB 테이블 구조
+![image](https://user-images.githubusercontent.com/20436113/202624539-e083093b-8310-4ea2-95db-be0209f5f740.png)
+
 
 # 
