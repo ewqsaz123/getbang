@@ -92,4 +92,15 @@
           selector:
             app: reservation
     ```
-- fdfd
+- REST API 테스트
+ - 룸 생성
+   - 케이스 시나리오 : 2개 룸 생성(id:1,2) -> 예약상태(viewpage) 조회 
+ - 예약 요청
+   - 케이스 시나리오 : scheduleId=1 에 대해 예약 요청 -> 룸(management) 서비스측 상태 조회, 예약상태(viewpage) 서비스측 상태 조회
+   --> 생성된 룸 정보가 viewpage에도 추가됨(kakfa를 이용한 pub/sub 통신) 
+ - 예약 승인
+   - 케이스 시나리오 : scheduleId=1 인 룸의 예약을 승인 -> 예약(reservation) 서비스측 조회, 예약상태(viewpage) 서비스측 상태 조회
+ - 예약 취소
+   - 케이스 시나리오 : reservationId=1 인 예약을 취소 -> 룸(management) 서비스측 상태 조회, 예약상태(viewpage) 서비스측 상태 조회
+ 
+  
