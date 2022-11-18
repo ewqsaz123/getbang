@@ -50,4 +50,61 @@
   ![image](https://user-images.githubusercontent.com/20436113/202624539-e083093b-8310-4ea2-95db-be0209f5f740.png)
 
 
-# 
+# 구현
+
+- Deloyment.yaml(예시 reservation. viewpage와 management 모두 동일)
+    ```
+      apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reservation
+  labels:
+    app: reservation
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reservation
+  template:
+    metadata:
+      labels:
+        app: reservation
+    spec:
+      containers:
+        - name: reservation
+          image: ewqsaz123/reservation:latest
+          ports:
+            - containerPort: 8080
+#          readinessProbe:
+#            httpGet:
+#              path: '/actuator/health'
+#              port: 8080
+#            initialDelaySeconds: 10
+#            timeoutSeconds: 2
+#            periodSeconds: 5
+#            failureThreshold: 10
+          livenessProbe:
+            httpGet:
+              path: '/actuator/health'
+              port: 8080
+            initialDelaySeconds: 120
+            timeoutSeconds: 2
+            periodSeconds: 5
+            failureThreshold: 5 
+    ```
+- Service.yaml
+    ```
+       apiVersion: v1
+kind: Service
+metadata:
+  name: reservation
+  labels:
+    app: reservation
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: reservation
+    ```
+- fdfd
