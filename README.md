@@ -34,17 +34,20 @@
 # 이벤트 스토밍
 
 - MSAEz 로 모델링한 이벤트스토밍 결과: https://www.msaez.io/#/storming/gvBKJ8asEZSiRXXDACkN51rc7D83/2ea40b104d4dea04fd51633b608fbe1e
-![image](https://user-images.githubusercontent.com/20436113/200521709-fdb79870-2ef3-4dcd-b138-fc5475dae2e1.png)
+  ![image](https://user-images.githubusercontent.com/20436113/200521709-fdb79870-2ef3-4dcd-b138-fc5475dae2e1.png)
 
 
 - 도메인 서열 분리 
     - Core Domain:  reservation, management
     - Supporting Domain:  viewpage(ReseravationStatusView)
     
-# 시스템 구조
+# 애플리케이션 구조
+  ![image](https://user-images.githubusercontent.com/20436113/202630142-73a58e41-4fce-4294-9ea9-cd9225da341d.png)
+
+# 애플리케이션 구조
   
 # DB 테이블 구조
-![image](https://user-images.githubusercontent.com/20436113/202624539-e083093b-8310-4ea2-95db-be0209f5f740.png)
+  ![image](https://user-images.githubusercontent.com/20436113/202624539-e083093b-8310-4ea2-95db-be0209f5f740.png)
 
 
 # 
