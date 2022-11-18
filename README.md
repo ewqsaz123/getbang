@@ -1,6 +1,5 @@
 # getbang - 겟방
 - 방탈출 카페 통합 예약 시스템
-- Cloud Native App
 
 # Table of contents
 
@@ -20,12 +19,6 @@
 6. 고객이 승인된 예약을 취소할 수 있다. (단, 예약 1시간 전까지만 취소가능)
 7. 고객은 예약 현황을 조회하고, 사장님은 룸/예약 상태를 확인할 수 있다.
 
-비기능적 요구사항
-1. 장애격리
-    1. 예약 관리 기능이 수행되지 않더라도 예약 주문&승인은 365일 24시간 받을 수 있어야 한다  Async (event-driven), Eventual Consistency
-2. 성능
-    1. 예약 및 룸 관리기능과 별도로 이루어진 조회만을 위한 서비스가 있어야 한다.(CQRS)
-    
  
 # 이벤트 스토밍
 
@@ -34,7 +27,7 @@
 
 
 - 도메인 서열 분리 
-    - Core Domain:  reservation, management : 없어서는 안될 핵심 서비스이며, 연견 Up-time SLA 수준을 99.999% 목표, 배포주기는 app 의 경우 1주일 1회 미만, store 의 경우 1개월 1회 미만
-    - Supporting Domain:  viewpage(ReseravationStatusView) : 경쟁력을 내기위한 서비스이며, SLA 수준은 연간 60% 이상 uptime 목표, 배포주기는 각 팀의 자율이나 표준 스프린트 주기가 1주일 이므로 1주일 1회 이상을 기준으로 함.
+    - Core Domain:  reservation, management
+    - Supporting Domain:  viewpage(ReseravationStatusView)
     
 
