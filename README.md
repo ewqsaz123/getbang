@@ -42,9 +42,9 @@
     - Supporting Domain:  viewpage(ReseravationStatusView)
     
 # 애플리케이션 구조
-  ![image](https://user-images.githubusercontent.com/20436113/202630142-73a58e41-4fce-4294-9ea9-cd9225da341d.png)
+  ![image](https://user-images.githubusercontent.com/20436113/202940634-ab366e4b-3864-4cf3-b0d8-96c750fed7fd.png)
 
-# 애플리케이션 구조
+
   
 # DB 테이블 구조
   ![image](https://user-images.githubusercontent.com/20436113/202624539-e083093b-8310-4ea2-95db-be0209f5f740.png)
@@ -92,6 +92,16 @@
           selector:
             app: reservation
     ```
+    
+    
+- 쿠버네티스 배포
+  [네임스페이스 : service]
+  ![image](https://user-images.githubusercontent.com/20436113/202939430-5cf6c627-d144-49d0-ac12-da22ee52f30c.png)
+
+  [네임스페이스 : kafka]
+  ![image](https://user-images.githubusercontent.com/20436113/202939898-a0648888-a67b-4420-b3ee-886d423161de.png)
+
+    
 - REST API 테스트
  - 룸 생성
    - 케이스 시나리오 : 2개 룸 생성(id:1,2) -> 예약상태(viewpage) 조회 
@@ -138,12 +148,4 @@
 
     [예약상태(viewpage) 서비스측 상태 조회] - 결과 : 변경된 정보가 동일하게 반영됨
     ![image](https://user-images.githubusercontent.com/20436113/202938937-3f9675a1-38cd-4408-a77d-9c5be3828d4e.png)
-
-  
-- 쿠버네티스 배포
-  [네임스페이스 : service]
-  ![image](https://user-images.githubusercontent.com/20436113/202939430-5cf6c627-d144-49d0-ac12-da22ee52f30c.png)
-
-  [네임스페이스 : kafka]
-  ![image](https://user-images.githubusercontent.com/20436113/202939898-a0648888-a67b-4420-b3ee-886d423161de.png)
 
