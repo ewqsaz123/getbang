@@ -96,9 +96,11 @@
     
 - 쿠버네티스 배포
   [네임스페이스 : service]
+  
   ![image](https://user-images.githubusercontent.com/20436113/202939430-5cf6c627-d144-49d0-ac12-da22ee52f30c.png)
 
   [네임스페이스 : kafka]
+  
   ![image](https://user-images.githubusercontent.com/20436113/202939898-a0648888-a67b-4420-b3ee-886d423161de.png)
 
     
