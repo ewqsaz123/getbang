@@ -105,7 +105,7 @@
 
     
 - REST API 테스트
- - 룸 생성
+ 1. 룸 생성
    - 케이스 시나리오 : 2개 룸 생성(id:1,2) -> 예약상태(viewpage) 조회 
     [Id:1번 룸 생성] - 결과 : 테이블 저장
     ![image](https://user-images.githubusercontent.com/20436113/202937818-7ea82eb9-15e7-4b67-bd98-f2c5f0a956e9.png)
@@ -117,7 +117,7 @@
     ![image](https://user-images.githubusercontent.com/20436113/202938062-6b4ecf21-6d85-4019-b529-7803863f27a8.png)
 
     
- - 예약 요청
+ 2. 예약 요청
    - 케이스 시나리오 : scheduleId=2 에 대해 예약 요청 -> 룸(management) 서비스측 상태 조회, 예약상태(viewpage) 서비스측 상태 조회
    --> 생성된 룸 정보가 viewpage에도 추가됨(kakfa를 이용한 pub/sub 통신) 
     [scheduleId=1 에 대해 예약 요청] - 결과 : 테이블 저장
@@ -129,7 +129,7 @@
     [예약상태(viewpage) 서비스측 상태 조회] - 결과 : Id=2인 룸의 추가/변경된 정보가 동일하게 반영됨
      ![image](https://user-images.githubusercontent.com/20436113/202938374-89a7506e-06ca-4dc5-8e86-57b5114d92a4.png)
 
- - 예약 승인
+ 3. 예약 승인
    - 케이스 시나리오 : scheduleId=1 인 룸의 예약을 승인 -> 예약(reservation) 서비스측 조회, 예약상태(viewpage) 서비스측 상태 조회
     [scheduleId=1 인 룸의 예약을 승인] - 결과 : 테이블 update
     ![image](https://user-images.githubusercontent.com/20436113/202938447-75aa26c7-1ac7-457c-a833-d1f3ac4db411.png)
@@ -140,7 +140,7 @@
     [예약상태(viewpage) 서비스측 상태 조회] - 결과 : 변경된 정보가 동일하게 반영됨
     ![image](https://user-images.githubusercontent.com/20436113/202938644-7d4c80ca-01e5-4bcd-831b-708019b812aa.png)
 
- - 예약 취소
+ 4. 예약 취소
    - 케이스 시나리오 : reservationId=1 인 예약을 취소 -> 룸(management) 서비스측 상태 조회, 예약상태(viewpage) 서비스측 상태 조회
     [reservationId=1 인 예약을 취소] - 결과 : 테이블 Update
     ![image](https://user-images.githubusercontent.com/20436113/202938798-f2a450a4-3112-4a6e-a96a-49b9848ff469.png)
