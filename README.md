@@ -15,8 +15,9 @@
 # Table of contents
 
 - [방탈출 카페 예약](#---)
-  - [서비스 시나리오](#서비스-시나리오)
-  - [체크포인트](#체크포인트)
+  - [서비스 시나리오](#서비스 시나리오)
+  - [체크포인트](#이벤트 스토밍)
+  - [구현](#구현)
 
 # 서비스 시나리오
 
@@ -129,6 +130,7 @@
     [예약상태(viewpage) 서비스측 상태 조회] - 결과 : Id=2인 룸의 추가/변경된 정보가 동일하게 반영됨
      ![image](https://user-images.githubusercontent.com/20436113/202938374-89a7506e-06ca-4dc5-8e86-57b5114d92a4.png)
 
+
  3. 예약 승인
    - 케이스 시나리오 : scheduleId=1 인 룸의 예약을 승인 -> 예약(reservation) 서비스측 조회, 예약상태(viewpage) 서비스측 상태 조회
     [scheduleId=1 인 룸의 예약을 승인] - 결과 : 테이블 update
@@ -139,6 +141,7 @@
      
     [예약상태(viewpage) 서비스측 상태 조회] - 결과 : 변경된 정보가 동일하게 반영됨
     ![image](https://user-images.githubusercontent.com/20436113/202938644-7d4c80ca-01e5-4bcd-831b-708019b812aa.png)
+
 
  4. 예약 취소
    - 케이스 시나리오 : reservationId=1 인 예약을 취소 -> 룸(management) 서비스측 상태 조회, 예약상태(viewpage) 서비스측 상태 조회
